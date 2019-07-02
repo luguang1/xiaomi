@@ -242,7 +242,9 @@ a{
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
+    display: none;
 }
+
 .zuo{
     left: 234px;
 }
@@ -406,6 +408,27 @@ a{
     box-sizing: border-box;
     float: left;
     border: 1px solid rgba(255,255,255,0.1);
+}
+.container1-left-list:hover .icon-xuangoushouji{
+    color: #fff;
+}
+.container1-left-list:hover .phone{
+    color: #fff;
+}
+.container1-left-list:hover .icon-man150yuanbaoyou24px{
+    color: #fff;
+}
+.container1-left-list:hover .icon-Fma{
+    color: #fff;
+}
+.container1-left-list:hover .icon-mifenqia-copy{
+    color: #fff;
+}
+.container1-left-list:hover .icon-yijiuhuanxin{
+    color: #fff;
+}
+.container1-left-list:hover .icon-chongzhi{
+    color: #fff;
 }
 .one{
     border-left:none;
@@ -1069,6 +1092,13 @@ a{
     box-sizing: border-box;
     margin-bottom: 14px;
     border-top: 1px solid #ffac13; 
+    position: relative;
+}
+.content:hover .jiantou2{
+    display: block;
+}
+.content1:hover .jiantou2{
+    display: block;
 }
 .content1:hover{
     transform: translateY(-5px);
@@ -1089,6 +1119,7 @@ a{
     box-sizing: border-box;
     margin-bottom: 14px;
     margin-left: 14px;
+    position: relative;
 }
 .content2{
     border-top: 1px solid #83c44e; 
