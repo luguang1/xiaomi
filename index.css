@@ -149,19 +149,24 @@ a{
     border-right: none;
     box-sizing: border-box;
 }
+.search-right:hover{
+    background-color: #ff6700;
+    
+}
 .container-search:hover .search-left{
     border: 1px solid #b0b0b0;
     border-right: none;
 }
-.search-right:hover{
-    background-color: #ff6700;
-}
+
 .search-right:hover .icon-sousuo{
     color: #fff;
 }
 
 .container-search:hover .search-right{
     border: 1px solid #b0b0b0;
+}
+.container-search .search-right:hover{
+    border-color: #ff6700;
 }
 .search-right{
     width: 52px;
@@ -181,9 +186,31 @@ a{
 .nav{
     width: 1226px;
     height: 460px;
-    background-color: #2196f3;
+    /* background-color: #2196f3; */
     margin: 0 auto;
     position: relative;
+}
+.point{
+    width: 700px;
+    height: 17.6px;
+    /* background-color: #83c44e; */
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+.pager{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 3px 5px;
+    border-radius: 5px;
+    float: right;
+    border: 2px solid #757575;
+    box-sizing: border-box;
+}
+.pager:hover{
+    background-color: rgba(255,255,255,0.4);
+    color:rgba(0,0,0,0.4);
 }
 .list{
     width: 234px;
@@ -312,6 +339,7 @@ a{
     position: fixed;
     right: 0;
     top: 150px;
+    z-index: 999;
 }
 .fix-small{
     display: block;
@@ -548,32 +576,38 @@ a{
 .main-box1-more1{
     float:right;
     font-size: 16px;
-    line-height: 58px;
+    /* line-height: 58px; */
     color: #424242;
+    margin-top:16px;
+
 }
 .main-box1-more2{
     float:right;
     font-size: 16px;
-    line-height: 58px;
+    /* line-height: 58px; */
     color: #424242;
+    margin-top: 16px;
 }
 .main-box1-more3{
     float:right;
     font-size: 16px;
-    line-height: 58px;
+    /* line-height: 58px; */
     color: #424242;
+    margin-top: 16px;
 }
 .main-box1-more4{
     float:right;
     font-size: 16px;
-    line-height: 58px;
+    /* line-height: 58px; */
     color: #424242;
+    margin-top: 16px;
 }
 .main-box1-more5{
     float:right;
     font-size: 16px;
-    line-height: 58px;
+    /* line-height: 58px; */
     color: #424242;
+    margin-top: 16px;
 }
 .main-box1-more:hover{
     color: #ff6700;
@@ -689,6 +723,11 @@ a{
     text-align: center;
     color: #333;
     margin-top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
 }
 .mobile-des{
@@ -725,6 +764,7 @@ a{
     margin: 0 auto;
 }
 .main-box1-hot{
+    height: 25px;
     float: left;
     margin-left: 30px;
 }
@@ -1024,11 +1064,13 @@ a{
 }
 .hot-des{
     width: 240px;
-    height: 48px;
+    height: 72px;
     color: #333;
     /* background-color: yellow; */
     margin: 0 auto;
     margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
 }
 .hot-des2{
     width: 240px;
@@ -1037,7 +1079,7 @@ a{
     font-size: 12px;
     /* background-color: pink; */
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 28px;
 }
 .hot-des3{
     width: 160px;
@@ -1234,6 +1276,7 @@ a{
 .video-des1{
     width: 296px;
     height: 180px;
+    position: relative;
    /* background-color: #2196f3; */
 }
 .video1{
@@ -1243,12 +1286,11 @@ a{
     float: left;
     /* margin-bottom: 14px; */
     font-size: 14px; 
-    position: relative;
 }
 .play{
     position: absolute;
     left: 20px;
-    bottom: 108px;
+    bottom: 8px;
     width: 32px;
     height: 20px;
     border: 2px solid #fff;
@@ -1263,7 +1305,7 @@ a{
     line-height: 16px;
     font-size: 25px;
 }
-.play:hover{
+.video-des1:hover .play{
     background-color: #ff6700;
     border-color: #ff6700;
 }
@@ -1292,6 +1334,9 @@ a{
     margin-top: 25px;
     margin-bottom: 10px;
 }
+.video-des2:hover{
+    color: #ff6700;
+}
 .video-des3{
     width: 296px;
     height: 18px;
@@ -1309,7 +1354,6 @@ a{
     margin-left: 14px;
     /* margin-bottom: 14px; */
     font-size: 14px; 
-    position: relative;
 }
 .footer-big{
     width: 100%;
@@ -1433,10 +1477,16 @@ p{
     font-size: 14px;
     color: #424242;
 }
+.help-des1:hover{
+    color: #ff6700;
+}
 .help-des2{
     margin-top: 10px;
     font-size: 12px;
     color: #757575;
+}
+.help-des2:hover{
+    color: #ff6700;
 }
 .help-right{
     width: 252px;
@@ -1478,6 +1528,10 @@ p{
     margin: 0 auto;
     color: #ff6700;
 }
+.contact4:hover{
+    color: #fff;
+    background-color: #ff6700;
+}
 .footer1{
     width: 1226px;
     height: 230px;
@@ -1502,6 +1556,9 @@ p{
     height: 18.4px;
     /* background-color: yellow; */
     float: left;
+}
+.font-hove1:hover{
+    color: #ff6700;
 }
 .footer1-des1 a{
     font-size: 12px;
